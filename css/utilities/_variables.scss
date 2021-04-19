@@ -1,0 +1,27 @@
+// COLOURS
+$color-main: #97cd27;
+$color-secondary: #262626;
+$color-white: #fcfcfc;
+
+$color-grey-light-1: #eaeaea;
+$color-grey-light-2: #f8f8f8;
+$color-grey-1: #939393;
+$color-black: #000;
+$color-shadow: rgba(0, 0, 0, 0.048);
+
+$color-yellow-1: #ffce00;
+
+// FONT FAMILY
+$default-font: "Montserrat";
+
+// BREAKPOINTS
+$bp-phone: 767px;
+$bp-tablet: 1023px;
+$bp-laptop-small: 1320px;
+
+// TOP NAV
+$nav-border: 1px solid
+  rgba(
+    $color: $color-grey-1,
+    $alpha: 0.3,
+  );

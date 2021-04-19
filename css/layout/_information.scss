@@ -1,0 +1,43 @@
+.information {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $color-grey-light-2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 5rem 0;
+
+  &__heading {
+    margin: 1rem 0 1rem 0;
+  }
+
+  &__card {
+    width: 45rem;
+    height: 55rem;
+    background-color: $color-white;
+    margin: 2rem;
+    box-shadow: 0 0 1.5rem $color-shadow;
+    &--img {
+      width: 100%;
+      height: 55%;
+      background-position: center;
+      background-size: cover;
+    }
+    &--text {
+      padding: 2rem;
+      //   height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+}
+
+.where-can-i-go {
+  background-image: url(../img/compressed/where-can-i-go-min.jpg);
+}
+.what-can-i-do {
+  background-image: url(../img/compressed/what-can-i-do-min.jpg);
+}

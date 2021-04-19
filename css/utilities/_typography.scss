@@ -1,0 +1,101 @@
+//////////////////////////////////////////////////////
+// GLOBAL - Stars
+.card-stars {
+  width: 8rem;
+}
+// Stored the star size here because all of the other 'card' adjustments are here i.e. heading
+
+//////////////////////////////////////////////////////
+// GLOBAL TYPOGRAPHY
+
+.main-heading {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  color: $color-main;
+  margin: 7.55rem 0 5rem 0;
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+
+.card-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $color-white;
+  letter-spacing: 1px;
+}
+
+.card-subheading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 500;
+}
+
+.main-text {
+  color: $color-secondary;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .main-text {
+    font-size: 1.25rem;
+  }
+}
+
+//////////////////////////////////////////////////////
+// HERO
+.hero {
+  &__heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+}
+@media only screen and (max-width: $bp-phone) {
+  .hero {
+    &__heading {
+      font-size: 3rem;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////
+// WHY CHOOSE GAP360
+
+.why-choose__cards--heading {
+  text-transform: uppercase;
+  color: $color-main;
+  margin: 2rem 0 2rem 0;
+  font-size: 1.75rem;
+}
+
+//////////////////////////////////////////////////////
+// FOOTER
+
+.footer {
+  &-text {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-decoration: none; // For the a elements
+
+    & li {
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+  }
+}
+
+.subfooter__text {
+  color: $color-white;
+}

@@ -1,0 +1,162 @@
+.favourites {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // FIRST SECTION
+  &__section-1 {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &--card {
+      width: 50rem;
+      margin: 2rem;
+      text-decoration: none;
+      // transition: all 0.2s ease;
+      // &:hover {
+      //   transform: translateY(-5px);
+      // }
+
+      &-1 {
+        height: 30rem;
+        background-image: url(../img/compressed/fav-trips-1-min.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: brightness(80%) contrast(110%);
+        }
+      }
+      &-2 {
+        height: 30rem;
+        background-image: url(../img/compressed/fav-trips-2-min.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: brightness(80%) contrast(110%);
+        }
+      }
+    }
+  }
+
+  // SECOND SECTION
+  &__section-2 {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &--card {
+      width: 32rem;
+      margin: 2rem;
+      text-decoration: none;
+
+      &-1 {
+        height: 40rem;
+        background-image: url(../img/compressed/fav-trips-3-min.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: brightness(80%) contrast(110%);
+        }
+      }
+      &-2 {
+        height: 40rem;
+        background-image: url(../img/compressed/fav-trips-4-min.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: brightness(80%) contrast(110%);
+        }
+      }
+      &-3 {
+        height: 40rem;
+        background-image: url(../img/compressed/fav-trips-5-min.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: brightness(80%) contrast(110%);
+        }
+      }
+    }
+  }
+  // CARD TEXT
+  &__text {
+    margin-top: 1rem;
+
+    &--line-1 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-laptop-small) {
+  .favourites {
+    &__section-1 {
+      &--card {
+        width: 45rem;
+      }
+    }
+    &__section-2 {
+      &--card {
+        width: 29rem;
+        &-1 {
+          height: 35rem;
+        }
+        &-2 {
+          height: 35rem;
+        }
+        &-3 {
+          height: 35rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-tablet) {
+  .favourites {
+    &__section-2 {
+      &--card {
+        width: 45rem;
+
+        &-1 {
+          height: 30rem;
+        }
+        &-2 {
+          height: 30rem;
+        }
+        &-3 {
+          height: 30rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .favourites {
+    &__section-1 {
+      &--card {
+        width: 28rem;
+      }
+    }
+    &__section-2 {
+      &--card {
+        width: 28rem;
+      }
+    }
+  }
+}

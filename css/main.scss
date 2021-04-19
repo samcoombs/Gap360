@@ -1,0 +1,15 @@
+@import "utilities/variables";
+@import "utilities/typography";
+@import "utilities/classes";
+
+@import "base/reset";
+
+@import "components/navbar";
+@import "components/footer";
+
+@import "layout/hero";
+@import "layout/popular-destinations";
+@import "layout/information";
+@import "layout/why-choose";
+@import "layout/popular-trips";
+@import "layout/fav-trips";

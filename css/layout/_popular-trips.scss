@@ -1,0 +1,88 @@
+.trips {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: space-between;
+  align-items: center;
+  background-color: $color-grey-light-2;
+
+  &__cards {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &--card {
+      height: 50rem;
+      width: 40rem;
+      margin: 2rem;
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-position: center;
+      background-size: cover;
+      text-decoration: none;
+      border-bottom: 5px solid rgba($color-black, 0.75);
+      transition: all 0.2s;
+
+      &:hover {
+        border-bottom: 5px solid $color-main;
+      }
+    }
+
+    @media only screen and (max-width: $bp-laptop-small) {
+      .trips {
+        &__cards {
+          &--card {
+            height: 40rem;
+            width: 30rem;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      .trips {
+        &__cards {
+          &--card {
+            height: 50rem;
+            width: 40rem;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: $bp-phone) {
+      .trips {
+        &__cards {
+          &--card {
+            height: 38rem;
+            width: 28rem;
+          }
+        }
+      }
+    }
+
+    &--thai-adventure {
+      background-image: linear-gradient(
+          transparent 50%,
+          rgba($color-black, 0.75) 100%
+        ),
+        url(../img/compressed/pop-trips-1-min.jpg);
+    }
+    &--elephant-experience {
+      background-image: linear-gradient(
+          transparent 50%,
+          rgba($color-black, 0.75) 100%
+        ),
+        url(../img/compressed/pop-trips-2-min.jpg);
+    }
+    &--japan {
+      background-image: linear-gradient(
+          transparent 50%,
+          rgba($color-black, 0.75) 100%
+        ),
+        url(../img/compressed/pop-trips-3-min.jpg);
+    }
+  }
+}

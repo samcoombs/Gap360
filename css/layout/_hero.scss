@@ -1,0 +1,100 @@
+.hero {
+  height: 84vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba($color-black, 0.3),
+      rgba($color-black, 0)
+    ),
+    url(../img/compressed/hero-bg-desktop-min.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__form {
+    bottom: 10vh;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+
+    &--item {
+      background-color: $color-white;
+      border: none;
+      height: 5rem;
+      width: 25rem;
+      padding: 0 1rem 0 1rem;
+      font-family: $default-font;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+      &:not(:nth-child(3)) {
+        border-right: $nav-border;
+      }
+    }
+    &--submit {
+      height: 5rem;
+      width: 25rem;
+      padding: 0 1rem 0 1rem;
+      border: none;
+      background-color: $color-main;
+      font-family: $default-font;
+      font-weight: 600;
+      color: $color-white;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+
+      &-icon {
+        position: absolute;
+        height: 1.5rem;
+        margin-top: 1.7rem;
+        right: 16vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-tablet) {
+  .hero {
+    height: 90vh;
+    padding-top: 20vh;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+      flex-direction: column;
+      position: inherit;
+      &--item {
+        width: 40rem;
+        &:nth-child(n + 2) {
+          display: none;
+        }
+      }
+      &--submit {
+        width: 40rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .hero {
+    background-image: url(../img/compressed/hero-bg-mobile-min.jpg);
+    &__form {
+      &--item {
+        width: 30rem;
+      }
+      &--submit {
+        width: 30rem;
+      }
+    }
+  }
+}

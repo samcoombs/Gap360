@@ -1,0 +1,35 @@
+.why-choose {
+  width: 100%;
+  //   min-height: 75vh;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__cards {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    &--card {
+      text-align: center;
+      width: 32.5rem;
+      margin: 1rem;
+      padding: 1rem 4rem 1rem 4rem;
+    }
+    &--icon {
+      height: 5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .why-choose {
+    &__cards {
+      &--card {
+        width: 30rem;
+      }
+    }
+  }
+}
