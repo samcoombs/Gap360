@@ -10,6 +10,7 @@ $hamburger.on("click", function () {
     isOpen = true;
   } else {
     $navList.slideUp();
+    $html.css("overflow-y", "visible");
     isOpen = false;
   }
 });
